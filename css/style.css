@@ -12,16 +12,21 @@ body {
 }
 
 #all {
+    align-items: center;
+    padding: 20px;
     display: flex;
 }
 
 h1 {
+    text-shadow: 5px 5px 1px rgb(128, 128, 128, 0.5);
     color: #66FCF1;
-    margin: 40px;
+    margin: 40px 0px 0px 0px;
     font-size: 45px;
 }
 
 #container {
+    border-radius: 5px;
+    justify-self: center;
     background-color: white;
     box-shadow: 3px 3px 20px;
     display: flex;
@@ -45,7 +50,7 @@ h1 {
 button {
     color: #C5C6C7;
     background-color: #1F2833;
-    margin: 20px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     height: 40px;
     border-radius: 5px;
     border-color: #66FCF1;
@@ -66,10 +71,39 @@ button:hover, button:focus {
 }
 
 #slider {
+    padding: 10px;
     background: #45A29E;
     color: #66FCF1;
 }
 
 p {
+    margin: 15px 0px 0px 0px;
+    font-size: 21px;
+    align-self: center;
     color: #C5C6C7;
+}
+
+#cpContainer {
+    display: flex;
+}
+
+.color-picker {
+    position: relative;
+}
+
+.color-indicator {
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000ff;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+#color-picker {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
 }
